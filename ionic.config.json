@@ -1,0 +1,7 @@
+{
+  "name": "myAppCad",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

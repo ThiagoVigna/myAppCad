@@ -1,0 +1,49 @@
+<ion-header class="header">
+  <ion-toolbar color="secondary">
+    <ion-title>
+      <p align="center" style="color:white;  font-size: x-large;">Cadastramento</p>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-toolbar>
+  <p align="center" style="color:rgb(61,194,255); font-size: x-large;">
+    Nome_Candidato
+  </p>
+</ion-toolbar>
+
+
+<ion-grid class="ion-grid-column-padding: 5px;">
+  <ion-row>
+    <ion-col>
+      <div>
+        <ion-row class="ion-justify-content-center">
+          <ion-col>
+            <div>
+              <ion-button size="large" [routerLink]="['/cadastro']">Incluir</ion-button>
+              <ion-button size="large" [routerLink]="['/detail']">Alterar</ion-button>
+              <ion-button size="large" [routerLink]="['/detail']">Excluir</ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+      <div>
+        <ion-row class="ion-justify-content-center">
+          <ion-col size="10">
+            <div>
+              <ion-button size="large" [routerLink]="['/detail']">Consultar</ion-button>
+              <ion-button size="large" [routerLink]="['/list-user']">Listagem</ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="1">
+          <div class="header">
+            <ion-button color="danger" size="small" [routerLink]="['/src/index.html']">Sair</ion-button>
+          </div>
+       </ion-col>
+     </ion-row>
+    </ion-col>
+  </ion-row>
+</ion-grid>

@@ -1,0 +1,60 @@
+<ion-header class="header">
+  <ion-toolbar color="secondary">
+    <ion-title>
+      <p align="center" style="color:white;  font-size: x-large;">Inclusão</p>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <div>
+        <ion-grid>
+          <ion-item>
+            <ion-label>Estado: </ion-label>
+            <ion-input>
+              <ion-select interface="action-sheet" class="custom-options">
+                <ion-select-option value="brown">Sâo Paulo</ion-select-option>
+                <ion-select-option value="blonde">Blonde</ion-select-option>
+                <ion-select-option value="black">Black</ion-select-option>
+                <ion-select-option value="red">Red</ion-select-option>
+              </ion-select>
+            </ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Nome</ion-label>
+            <ion-input type="text" placeholder="Thiago Vigna"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">CPF</ion-label>
+            <ion-input type="text" placeholder="111.111.111-11"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Cidade</ion-label>
+            <ion-input type="text" placeholder="Ribeirão Preto"></ion-input>
+          </ion-item>
+        </ion-grid>
+      </div>
+      <div class="header">
+        <ion-button color="danger" size="small" [routerLink]="['/home']">Voltar</ion-button>
+        <ion-button color="success" size="small" [routerLink]="['']">Salvar</ion-button>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+<script>
+  // Pass a custom class to each select interface for styling
+  const selects = document.querySelectorAll('.custom-options');
+
+  for (var i = 0; i < selects.length; i++) {
+    selects[i].interfaceOptions = {
+      cssClass: 'my-custom-interface'
+    };
+  };
+
+</script>
